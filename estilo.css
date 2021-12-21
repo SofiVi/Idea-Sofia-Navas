@@ -294,7 +294,10 @@ ol{
     border-radius: 35px 0px 35px 0px;
     background-color: #cfccdd;
     grid-area: caja1;
+    
+
 }
+
 
 input[type=text], select {
     width: 100%;
@@ -359,6 +362,11 @@ input[type=text], select {
     align-content: center;
     background-color: whitesmoke;
     grid-area: caja7;
+    
+}
+
+.translate:hover{
+    transform: translate(30px, 20px);
 }
 
 .somos img{
