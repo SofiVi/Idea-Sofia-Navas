@@ -22,26 +22,22 @@
 .contenedorproductos{
     display: grid;
     padding: 0px;
-    margin: auto;
+    margin: 0px;
     width: 100%;
     gap: 10px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
     grid-template-areas: 
     "header header header"
-    "articulo articulo articulo"
+    "accordion accordion accordion"
     "footer footer footer"
     ;   
 }
 
-.greenIniciative{
-    grid-area:greenIniciative;
+.accordion{
+    grid-area: accordion;
 }
 
-.greenIniciativeImg{
-    grid-area:greenIniciativeImg;
-    display: none;
-}
 
 
 .contenedorSomos{
@@ -60,7 +56,7 @@
     ;
 }
 
-.contenedorContacto{
+/*.contenedorContacto{
     display: grid;
     padding: 20px;
     margin: auto;
@@ -74,6 +70,7 @@
     "footer footer footer"
     ;
 }
+*/
 
 .contenedorPreguntas{
     display: grid;
@@ -147,17 +144,6 @@
 
 a{
     text-decoration: none;
-}
-
-.articulo{
-    line-height: 1.6;
-    font-weight: lighter;
-    font-size: 1.2rem;
-    font-style: normal;
-    text-align: center;
-    grid-area: articulo;
-    
-   
 }
 
 ol{
@@ -294,7 +280,10 @@ ol{
     border-radius: 35px 0px 35px 0px;
     background-color: #cfccdd;
     grid-area: caja1;
+    
+
 }
+
 
 input[type=text], select {
     width: 100%;
@@ -359,6 +348,11 @@ input[type=text], select {
     align-content: center;
     background-color: whitesmoke;
     grid-area: caja7;
+    
+}
+
+.translate:hover{
+    transform: translate(30px, 20px);
 }
 
 .somos img{
@@ -432,6 +426,7 @@ li{
     margin-left: 0px;
     padding: 0%;
 }
+
 
 @media screen and (max-width: 1000px){
     .header{
